@@ -1,0 +1,134 @@
+.card {
+	font-size: 16px;
+	line-height: 1.25;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	min-height: 220px;
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border: 1px solid $gray-light;
+	border-radius: 5px;
+
+	&:hover {
+		/*box-shadow: 0 8px 14px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);*/
+	}
+
+	&__title {
+		padding: 10px 15px 0px 15px;
+		font-family: $fontLarge;
+		font-size: 1.5em;
+		margin-bottom: .8em;
+		text-transform: capitalize;
+	}
+
+	&__body {
+		font-family: $fontLarge;
+		height: 100%;
+		padding: 0px 15px 10px 15px;
+	}
+
+	&__result {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__row {
+		display: flex;
+
+	}
+
+	&__data-sub {
+		line-height: 2;
+	}
+
+	&__graph {
+		margin: 0 -15px;
+	}
+
+	&__label {
+		padding-right: 10px;
+
+		@include media-breakpoint-up(md) {
+			min-width: 0;
+		}
+	}
+
+	&__badge {
+
+		/*Bootstrap override*/
+		&.badge-danger {
+			color: $white !important;
+		}
+	}
+
+	&--address {
+		&-hash {
+			font-size: 1.5em;
+			font-weight: 400;
+		}
+
+		&-wallet {
+			font-size: 24px;
+		}
+	}
+
+	&--block &__row {
+		justify-content: flex-start;
+	}
+
+	&--block &__label {
+		padding-right: 10px;
+	}
+
+	&--status &__row {
+		justify-content: flex-start;
+	}
+
+	&--market {
+		/*font-size: 1.5em;*/
+	}
+
+	&--market &__info {
+		margin-top: .5em;
+	}
+
+	&--market &__icon--arrow {
+		font-weight: bold;
+	}
+
+	&--market &__data-main {
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 1;
+	}
+
+	&--market &__info-source {
+		color: $gray;
+		white-space: nowrap;
+	}
+
+	&--status &__result--status {
+		color: $green;
+	}
+
+	&--graph {
+
+		@include media-breakpoint-down(lg) {
+			padding: 0;
+		}
+
+		padding: 0 20px;
+	}
+
+	&--graph &__data-main {
+		font-size: 1.25em;
+		font-weight: bold;
+		line-height: .75;
+	}
+
+	&__data-sub {
+		font-size: .8em;
+		color: $gray;
+	}
+
+}

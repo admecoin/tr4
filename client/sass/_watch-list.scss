@@ -1,0 +1,49 @@
+.watch-list {
+	margin: 16px 0;
+
+	&__title {
+		font-family: $fontLarge;
+		font-size: 24px;
+		margin-bottom: .8em;
+		text-transform: capitalize;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		background-color: $blue-light;
+  		border-radius: 9px;
+		color: $white;
+		font-size: .5em;
+		margin: 1em 0;
+		padding: .25em;
+		text-transform: uppercase;
+	}
+
+	&__item:nth-child(odd) {
+		background-color: $blue-dark;
+	}
+
+	&__item-close {
+		color: $white;
+		cursor: pointer;
+		font-size: 2em;
+		margin-right: 1em;
+	}
+
+	&__item-text {
+		color: $white;
+		cursor: pointer;
+		font-family: $fontLarge;
+		font-size: 1.25em;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		letter-spacing: normal;
+		overflow: hidden;
+		text-align: left;
+		white-space: nowrap;
+		width: 75%;
+	}
+
+}
