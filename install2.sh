@@ -140,7 +140,7 @@ const config = {
   },
     'coinMarketCap': {
     'api': 'https://graviex.net//api/v2/tickers/',
-    'ticker': 'timbtc'
+    'ticker': 'encpbtc'
   },
   'db': {
     'host': '127.0.0.1',

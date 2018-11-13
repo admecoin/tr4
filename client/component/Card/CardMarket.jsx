@@ -43,7 +43,7 @@ export default class CardMarket extends Component {
             decimals={ 2 }
             duration={ 1 }
             end={ this.props.usd }
-            prefix={ 'TIM $' }
+            prefix={ 'ENCP $' }
             start={ 0 } />
         </p>
         <p className="card__data-sub">{ this.props.btc } BTC</p>

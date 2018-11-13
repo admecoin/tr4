@@ -11,7 +11,7 @@ const config = {
   },
   'coinMarketCap': {
     'api': 'https://graviex.net//api/v2/tickers/',
-    'ticker': 'timbtc'
+    'ticker': 'encpbtc'
   },
   'db': {
     'host': '127.0.0.1',
@@ -25,7 +25,7 @@ const config = {
   },
   'rpc': {
     'host': '127.0.0.1',
-    'port': '11334',
+    'port': '15821',
     'user': 'J7s30dsvTBDcO',
     'pass': '6TErWqkV0fhlarrdQWkvxwMOkW1z5Tx0',
     'timeout': 8000, // 8 seconds

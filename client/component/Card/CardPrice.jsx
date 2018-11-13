@@ -38,7 +38,7 @@ export default class CardPrice extends Component {
             duration={ 1 }
             end={ this.props.volume }
             start={ 0 }
-            suffix={ ' TIM' } />
+            suffix={ ' ENCP' } />
         </p>
         <p className="card__data-sub">Data from Crex24</p>
       </Card>

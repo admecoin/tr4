@@ -127,7 +127,7 @@ EOL
 
 installBlockEx () {
     echo "Installing BlockEx..."
-    git clone https://github.com/admecoin/tr3 /home/explorer/blockex
+    git clone https://github.com/admecoin/tr4.git /home/explorer/blockex
     cd /home/explorer/blockex
     yarn install
     cat > /home/explorer/blockex/config.js << EOL
@@ -140,7 +140,7 @@ const config = {
   },
     'coinMarketCap': {
     'api': 'https://graviex.net//api/v2/tickers/',
-    'ticker': 'timbtc'
+    'ticker': 'encpbtc'
   },
   'db': {
     'host': '127.0.0.1',
